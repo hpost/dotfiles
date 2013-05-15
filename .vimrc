@@ -1,8 +1,9 @@
 " Abbrevations
 """""""""""""""""""""""""""""""
 
-" Java println
-ab println System.out.println("");<esc>3hi
+" Java
+ab println System.out.println("");<esc>2hi
+ab fori for (int i = 0; i <; i++) {<cr><cr>}<esc>2kf<f;i
 
 
 " Mappings
