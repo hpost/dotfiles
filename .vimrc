@@ -46,13 +46,20 @@ map <A-8> 8gt
 map <A-9> 9gt
 map <A-0> :tablast<CR>
 
-" Move line(s) down/up using <A-{j,k}>
+" Move line(s) down/up <A-{j,k}>
 nnoremap <A-j> :m+<CR>==
 nnoremap <A-k> :m-2<CR>==
 inoremap <A-j> <Esc>:m+<CR>==gi
 inoremap <A-k> <Esc>:m-2<CR>==gi
 vnoremap <A-j> :m'>+<CR>gv=gv
 vnoremap <A-k> :m-2<CR>gv=gv
+
+" Indent/unident block <leader>{],[}
+nnoremap <leader>] >i{<CR>
+nnoremap <leader>[ <i{<CR>
+
+" Yank from cursor to end of line
+nnoremap Y y$
 
 " Disable arrow keys for movement
 nnoremap <up> <nop>
@@ -88,12 +95,17 @@ set showtabline=2
 set showcmd
 " Display statistics in lower right corner 
 set ruler
+" Send more characters at a given time
+set ttyfast
+" Visual instead of audible bell
+set visualbell
 " Search
 set ignorecase
 set smartcase
 set incsearch
 set showmatch
 set hlsearch
+set wrapscan
 " Save file before commands like :make
 set autowrite
 " Let working directory be the parent directory of the current file
@@ -119,12 +131,16 @@ command! Q q
 " Theme
 """""""""""""""""""""""""""""""
 
+" Enable syntax highlighting
+syntax on
 " Dark background
 set background=dark
+" 256 Colors in terminal
+set t_Co=256
 " Set colorscheme
 colorscheme badwolf
 " molokai theme settings
-"let g:molokai_original = 1
+let g:molokai_original = 1
 
 
 " GUI
