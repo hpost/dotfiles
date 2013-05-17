@@ -70,6 +70,8 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+
+" Navigate over wrapped lines
 nnoremap j gj
 nnoremap k gk
 
@@ -109,7 +111,7 @@ set wrapscan
 " Save file before commands like :make
 set autowrite
 " Let working directory be the parent directory of the current file
-"set autochdir
+set autochdir
 " Wrap line when moving cursor to the end of a line
 set whichwrap=b,s,<,>,h,l
 " Wrap long lines without breaking words
