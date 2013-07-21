@@ -100,7 +100,7 @@ set ruler
 " Send more characters at a given time
 set ttyfast
 " Visual instead of audible bell
-set visualbell
+"set visualbell
 " Search
 set ignorecase
 set smartcase
@@ -153,7 +153,8 @@ if has("gui_running")
   set columns=120
   set lines=35
   " Set font
-  set guifont=Inconsolata\ Medium\ 12
+  set guifont=Source\ Code\ Pro\ Regular\ 10
+  "set guifont=Inconsolata\ Medium\ 12
   "set guifont=Monaco\ Regular\ 10
   " Disable menu
   "set guioptions-=m
