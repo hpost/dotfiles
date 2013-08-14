@@ -140,9 +140,19 @@ set background=dark
 " 256 Colors in terminal
 set t_Co=256
 " Set colorscheme
-colorscheme badwolf
+colorscheme gruvbox
 " molokai theme settings
-let g:molokai_original = 1
+let g:molokai_original = 0
+
+" Toggle between dark and light background using <F5>
+map <F5> :call ToggleBg()<CR>
+function! ToggleBg()
+    if &background == 'dark'
+        set bg=light
+    else
+        set bg=dark
+    endif
+endfunc
 
 
 " GUI
