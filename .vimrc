@@ -12,9 +12,15 @@ ab fori for (int i = 0; i <; i++) {<cr><cr>}<esc>2kf<f;i
 " Leader key
 let mapleader = ","
 
+" Temporary
+map <Leader>l <esc>:w<CR>:!cd ~/Dropbox/Studium/Semester2/pa/documents/thesis && pdflatex pa.tex<cr>
+
 " Copy/paste to/from system clipboard
 map <Leader>c "+y
 map <Leader>v "+p
+
+" Make
+map <Leader>m :make<cr>
 
 " Clear search highlighting with spacebar
 nnoremap <leader><space> :noh<cr>
@@ -139,10 +145,10 @@ syntax on
 set background=dark
 " 256 Colors in terminal
 set t_Co=256
-" Set colorscheme
-colorscheme gruvbox
 " molokai theme settings
-let g:molokai_original = 0
+let g:molokai_original = 1
+" Set colorscheme
+colorscheme molokai
 
 " Toggle between dark and light background using <F5>
 map <F5> :call ToggleBg()<CR>
@@ -160,8 +166,8 @@ endfunc
 
 if has("gui_running")
   " Window size
-  set columns=120
-  set lines=35
+  set columns=110
+  set lines=999
   " Set font
   set guifont=Source\ Code\ Pro\ Regular\ 10
   "set guifont=Inconsolata\ Medium\ 12
