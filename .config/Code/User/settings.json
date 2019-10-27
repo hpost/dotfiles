@@ -1,0 +1,11 @@
+{
+    "editor.suggestSelection": "first",
+    "editor.tabSize": 2,
+    
+    "emmet.triggerExpansionOnTab": true,
+    
+    "javascript.implicitProjectConfig.checkJs": true,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+}
