@@ -1,8 +1,12 @@
 {
     "editor.suggestSelection": "first",
     "editor.tabSize": 2,
+    "editor.fontFamily": "'IBM Plex Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 15,
     
     "emmet.triggerExpansionOnTab": true,
+    
+    "git.autofetch": true,
     
     "javascript.implicitProjectConfig.checkJs": true,
     "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
