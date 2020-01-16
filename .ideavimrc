@@ -1,0 +1,13 @@
+# plugins
+set easymotion
+set surround
+set multiple-cursors
+
+# mappings
+map \r :action ReformatCode<CR>
+
+# window navigation using ctrl-j vs ctrl-w,j
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
