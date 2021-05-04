@@ -1,15 +1,33 @@
 {
+    "editor.fontFamily": "'Dank Mono', 'JetBrains Mono', 'IBM Plex Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 16,
+    
+    "editor.fontLigatures": true,
+    "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        {
+          "scope": ["comment", "keyword"],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        }
+      ]
+    }
+    
     "editor.suggestSelection": "first",
     "editor.tabSize": 2,
-    "editor.fontFamily": "'JetBrains Mono', 'IBM Plex Mono', Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 15,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
     
+    "workbench.colorTheme": "Dracula",
+    
+    "window.menuBarVisibility": "compact",
+
     "emmet.triggerExpansionOnTab": true,
     
     "git.autofetch": true,
     
-    "javascript.implicitProjectConfig.checkJs": true,
-    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "js/ts.implicitProjectConfig.checkJs": true,
     
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }
