@@ -12,7 +12,7 @@
           }
         }
       ]
-    }
+    },
     
     "editor.suggestSelection": "first",
     "editor.tabSize": 2,
